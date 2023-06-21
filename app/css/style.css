@@ -1,0 +1,88 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background: #040400;
+	-webkit-app-region: drag;
+	height: 100vh;
+	font-family: "Montserrat", sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.editable-field {
+	border-radius: 3px;
+	background: #1D1D1D;
+	border: 1px solid #383E00;
+	height: 200px;
+	margin-bottom: 40px;
+	padding: 10px 0 10px 10px;
+	-webkit-app-region: none;
+	color: #e2e2e2;
+	outline: 0 solid #7b7b7b;
+	transition: 0.3s;
+	overflow-y: scroll;
+}
+
+.editable-field::selection {
+	background-color: #7b7b7b;
+}
+
+.wrapper {
+	padding: 20px;
+	border-radius: 10px;
+}
+
+.button {
+	-webkit-app-region: none;
+}
+
+#buttonTranslate {
+	display: block;
+	width: 100%;
+	font-size: 15px;
+	padding: 10px 0;
+	border-radius: 3px;
+	font-weight: bold;
+	font-family: "Montserrat", sans-serif;
+	transition: 0.3s;
+}
+
+#buttonTranslate:hover {
+	background: #a5a5a5;
+}
+
+.editable-field:focus{
+	outline: 1px solid #aeaeae;
+}
+
+/* Scroll */
+
+/* width */
+::-webkit-scrollbar {
+	width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: none;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #888;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #555;
+}
